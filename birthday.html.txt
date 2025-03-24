@@ -1,0 +1,64 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday Ade!</title>
+    <style>
+        body {
+            background: linear-gradient(to right, #ffccff, #99ccff);
+            text-align: center;
+            font-family: 'Comic Sans MS', cursive, sans-serif;
+            color: #333;
+            padding: 50px;
+        }
+        .container {
+            background: white;
+            padding: 20px;
+            border-radius: 15px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+            max-width: 500px;
+            margin: auto;
+        }
+        h1 {
+            color: #ff6699;
+        }
+        p {
+            font-size: 18px;
+        }
+        .image {
+            width: 100%;
+            border-radius: 10px;
+        }
+        .btn {
+            background: #ff6699;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+            margin-top: 15px;
+        }
+        .btn:hover {
+            background: #cc3366;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Happy Birthday, Ade! 🎉🎂</h1>
+        <img class="image" src="https://source.unsplash.com/400x300/?birthday,cake" alt="Birthday Cake">
+        <p>Semoga selalu sehat, bahagia, dan sukses dalam segala hal yang kamu lakukan! Teruslah menjadi teman yang baik dan menyenangkan. 💖</p>
+        <button class="btn" onclick="playMusic()">Putar Lagu 🎶</button>
+        <audio id="birthdaySong" src="https://www.myinstants.com/media/sounds/taylor-swift-22.mp3"></audio>
+    </div>
+
+    <script>
+        function playMusic() {
+            document.getElementById('birthdaySong').play();
+        }
+    </script>
+</body>
+</html>
